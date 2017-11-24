@@ -22,6 +22,7 @@ public class StatusActivity extends Activity implements View.OnClickListener{
 
         editStatus = (EditText) findViewById(R.id.editStatus);
         buttonTweet = (Button) findViewById(R.id.buttonTweet);
+        buttonTweet.setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +34,6 @@ public class StatusActivity extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         String status = editStatus.getText().toString();
-        Log.d(TAG,"onCliced with status: "+ status)
+        Log.d(TAG, "onCliced with status: " + status);
     }
 }
